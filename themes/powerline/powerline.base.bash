@@ -104,7 +104,8 @@ function __powerline_wd_prompt {
 }
 
 function __powerline_clock_prompt {
-  echo "$(date +"${THEME_CLOCK_FORMAT}")|${CLOCK_THEME_PROMPT_COLOR}"
+  # echo "$(date +"${THEME_CLOCK_FORMAT}")|${CLOCK_THEME_PROMPT_COLOR}"
+  echo ""
 }
 
 function __powerline_battery_prompt {
