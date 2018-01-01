@@ -91,7 +91,7 @@ function __powerline_scm_prompt {
 
 function __powerline_cwd_prompt {
   local cwd=$(pwd | sed "s|^${HOME}|~|")
-
+  cwd=${cwd/*\//}
   echo "${cwd}|${CWD_THEME_PROMPT_COLOR}"
 }
 
